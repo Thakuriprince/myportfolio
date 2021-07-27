@@ -1,0 +1,15 @@
+{
+  "name": "lakeview",
+  "version": "1.0.0",
+  "description": "a country website",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass resources/sass/main.scss resources/css/style.css",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
