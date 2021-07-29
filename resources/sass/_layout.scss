@@ -29,7 +29,7 @@
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 1;
-    margin: 5rem 12rem 0 2rem;
+    margin: 5rem 6rem 0 2rem;
     list-style: none;
     font-weight: 600;
 
@@ -61,7 +61,7 @@
     left: 50rem;
     text-align: center;
     @media only screen and (max-width: $breakpoint-1200) {
-      left: 20rem;
+      left: 30rem;
     }
   }
 
@@ -71,6 +71,10 @@
     letter-spacing: normal;
     margin-bottom: 1rem;
     color: $color-primary-light;
+
+    @media only screen and (max-width: $breakpoint-900) {
+      font-size: 5rem;
+    }
   }
 
   &__text-box p {
@@ -91,6 +95,11 @@
   &__btn {
     position: absolute;
     left: 10rem;
+
+    @media only screen and (max-width: $breakpoint-900) {
+      left: 0;
+      //top: 0rem;
+    }
   }
 }
 
@@ -98,6 +107,10 @@
   background-color: $color-white;
   //margin-bottom: 5rem;
   height: 110vh;
+
+  @media only screen and (max-width: $breakpoint-700) {
+    height: 170vh;
+  }
 
   &--full {
     margin: 0 13rem 0 13rem;
@@ -108,6 +121,25 @@
     justify-content: space-between;
     //border: 110rem solid $color-white;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.5);
+    //height: 92vh;
+
+    @media only screen and (max-width: $breakpoint-1300) {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    @media only screen and (max-width: $breakpoint-1200) {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 0 9rem 0 9rem;
+      padding-bottom: -3rem;
+    }
+    @media only screen and (max-width: $breakpoint-1000) {
+      margin: -4rem 5rem 0 5rem;
+    }
+    @media only screen and (max-width: $breakpoint-700) {
+      flex-direction: column;
+      margin: 0 7rem 0 7rem;
+    }
   }
 
   &--first {
@@ -117,13 +149,40 @@
 
   &--row {
     display: flex;
+
+    @media only screen and (max-width: $breakpoint-825) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media only screen and (max-width: $breakpoint-700) {
+      flex-direction: row;
+    }
   }
 
-  &--image img {
-    width: 15rem;
-    height: 15rem;
-    border: 2px solid transparent;
-    border-radius: 0.5rem;
+  &--image {
+    /*   @media only screen and (max-width: $breakpoint-900) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    } */
+
+    & img {
+      width: 15rem;
+      height: 15rem;
+      border: 2px solid transparent;
+      border-radius: 0.5rem;
+
+      @media only screen and (max-width: $breakpoint-900) {
+        height: 10rem;
+        width: 10rem;
+      }
+
+      @media only screen and (max-width: $breakpoint-825) {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
   }
 
   &--info {
@@ -131,6 +190,15 @@
     margin-bottom: 3rem;
     font-family: inherit;
     color: $color-black;
+
+    @media only screen and (max-width: $breakpoint-825) {
+      padding: 0rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    @media only screen and (max-width: $breakpoint-700) {
+      padding-left: 3rem;
+    }
 
     & p {
       margin-bottom: 1.4rem;
@@ -144,9 +212,18 @@
   &--skill {
     color: $color-black;
 
+    @media only screen and (max-width: $breakpoint-700) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
     & p {
       font-weight: 700;
       margin-bottom: 1rem;
+
+      @media only screen and (max-width: $breakpoint-700) {
+        font-size: 2rem;
+      }
     }
 
     & span {
@@ -184,6 +261,9 @@
         overflow: hidden;
         background-color: $color-primary-light;
         background-size: 100%;
+
+        @media only screen and (max-width: $breakpoint-900) {
+        }
       }
     }
   }
@@ -191,6 +271,9 @@
   &--second {
     flex: 1;
     padding-left: 3rem;
+    @media only screen and (max-width: $breakpoint-700) {
+      padding-left: 0rem;
+    }
   }
 
   &--me {

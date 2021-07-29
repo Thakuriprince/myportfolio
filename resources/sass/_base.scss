@@ -1,4 +1,3 @@
-@use "sass:map";
 * {
   margin: 0;
   padding: 0;
@@ -28,5 +27,9 @@ ul {
 }
 
 $breakpoint-478: 29.9em;
-$breakponint-838: 52.4em;
+$breakpoint-700: 43.75em;
+$breakpoint-825: 51.5625em;
+$breakpoint-900: 56.25em;
+$breakpoint-1000: 62.5em;
 $breakpoint-1200: 75em;
+$breakpoint-1300: 81.25em;
